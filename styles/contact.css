@@ -1,0 +1,81 @@
+/* Contacto */
+.contact {
+  padding: 80px 0;
+  color: #555555;
+}
+.contact .contact__content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.contact .contact__content > .contact__content--form > form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact .contact__content > .contact__content--form > form > input,
+.contact .contact__content > .contact__content--form > form > select {
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 50%;
+  flex-basis: 385px;
+}
+.contact .contact__content .contact__content--options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 175px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.contact .contact__content .contact__content--textarea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: roboto;
+  color: grey;
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+#inputOther {
+  display: none;
+  width: 100%;
+  flex-basis: 100%;
+}
+.contact__content--text {
+  width: 100%;
+  position: relative;
+}
+.counter__words {
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
+}
+.contact .contact__content > .contact__content--form > form > button {
+  padding: 15px 30px;
+  background-color: grey;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+}
+.contact .contact__content > .contact__content--form > form > button:hover {
+  background-color: #343e3d;
+}
+button:disabled {
+  opacity: 0.3;
+}
+.enviar {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .contact {
+    padding: 20px;
+  }
+}

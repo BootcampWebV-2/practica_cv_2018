@@ -1,0 +1,73 @@
+/* Cabecera/Portada */
+.header {
+  position: relative;
+}
+.header > .header__description {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -35%);
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  animation: backgroundAnimation 2s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+.header > .header__description > .header__title {
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  letter-spacing: -1px;
+  animation: titleAnimation 2s forwards;
+  animation-delay: 0.8s;
+  visibility: hidden;
+}
+.header > .header__description > .header__subtitle {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin: 0;
+  color: white;
+  letter-spacing: -1px;
+  animation: subtitleAnimation 2s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+.header > .header__image {
+  background-image: url(../images/cabecera_v1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  transition: background-size 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@keyframes titleAnimation {
+  0% {
+    font-size: 14rem;
+  }
+  100% {
+    font-size: 4rem;
+    visibility: visible;
+  }
+}
+@keyframes subtitleAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes backgroundAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

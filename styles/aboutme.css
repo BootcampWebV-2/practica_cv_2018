@@ -1,0 +1,30 @@
+/* Sobre mí */
+.about-me {
+  background-color: #f3f4f3;
+  padding: 80px 0;
+  color: #555555;
+}
+.about-me .about-me__content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-me .about-me__info {
+  margin-left: 50px;
+}
+.about-me .about-me__info .about-me__description {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .about-me {
+    padding: 20px;
+  }
+  .about-me .about-me__content {
+    display: block;
+    text-align: center;
+  }
+  .about-me .about-me__info {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}

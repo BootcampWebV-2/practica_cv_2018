@@ -1,0 +1,60 @@
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: roboto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  font-weight: 100;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* Contenido */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Títulos */
+.whoami .whoami__title,
+.studies .studies__title,
+.experience .experience__title,
+.about-me .about-me__title,
+.contact .contact__title {
+  color: #555;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: -2px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+
+/* Others */
+.separator--large {
+  position: absolute;
+  border-bottom: 1px solid #555;
+  bottom: -28px;
+  left: 50%;
+  height: 10px;
+  transform: translateX(-50%);
+  width: 110px;
+}
+.separator--small {
+  position: absolute;
+  border-bottom: 1px solid #555;
+  bottom: -34px;
+  left: 50%;
+  height: 10px;
+  transform: translateX(-50%);
+  width: 70px;
+}

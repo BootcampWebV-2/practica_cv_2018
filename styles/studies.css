@@ -1,0 +1,90 @@
+/* Estudios */
+.studies {
+  background-color: #f3f4f3;
+  padding: 80px 0;
+  text-align: center;
+  color: #555555;
+}
+.studies .studies__subtitle {
+  margin-bottom: 30px;
+}
+.studies .studies__content {
+  display: flex;
+  text-align: center;
+}
+.studies .studies__content > .studies__content--item {
+  padding: 20px;
+  justify-content: space-between;
+}
+.studies
+  .studies__content
+  > .studies__content--item
+  > .studies__content--circle {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.studies
+  .studies__content
+  .studies__content--item
+  .studies__content--circle
+  span {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.studies
+  .studies__content
+  .studies__content--item
+  .studies__content--circle
+  span:before {
+  position: absolute;
+  font-family: fontawesome;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.studies
+  .studies__content
+  .studies__content--item
+  .studies__content--circle
+  .ico__graphic:before {
+  content: "\f1fc";
+}
+.studies
+  .studies__content
+  .studies__content--item
+  .studies__content--circle
+  .ico__web:before {
+  content: "\f121";
+}
+.studies
+  .studies__content
+  .studies__content--item
+  .studies__content--circle
+  .ico__ui:before {
+  content: "\f044";
+}
+.studies
+  .studies__content
+  .studies__content--item
+  .studies__content--circle
+  .ico__development:before {
+  content: "\f085";
+}
+.studies .studies__content .studies__content--item .studies__content--title {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .studies {
+    padding: 20px;
+  }
+}

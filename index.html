@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Llabres">
+    <meta name="description" content="Curriculum">
+    <title>Curriculum</title>
+
+    <!-- Común -->
+    <link rel="stylesheet" href="./styles/common.css">
+
+    <!-- Temáticas -->
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/whoami.css">
+    <link rel="stylesheet" href="./styles/studies.css">
+    <link rel="stylesheet" href="./styles/experience.css">
+    <link rel="stylesheet" href="./styles/aboutme.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="navbar__list">
+                    <li class="navbar__item navbar__item--active">
+                        <a href="#header">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#whoami">Quien soy</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#studies">Estudios</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#experience">Experiencia</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about-me">Sobre mi</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menú mobile -->
+    <header class="header-mobile">
+        <nav class="menu-icon">
+            <ul>
+                <li>
+                    <a id="menuBtn" class="menu-desplegable" href="#bottom-menu"></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu-top">
+            <ul class="">
+                <li class="">
+                    <a href="#header">Inicio</a>
+                </li>
+                <li class="">
+                    <a href="#whoami">Quien soy</a>
+                </li>
+                <li class="">
+                    <a href="#studies">Estudios</a>
+                </li>
+                <li class="">
+                    <a href="#experience">Experiencia</a>
+                </li>
+                <li class="">
+                    <a href="#about-me">Sobre mi</a>
+                </li>
+                <li class="">
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cabecera/Portada -->
+    <section id="header" class="header">
+        <div class="header__description">
+            <h1 class="header__title">Lorem ipsum</h1>
+            <p class="header__subtitle">Pellentesque in massa mollis sapien viverra aliquet</h2>
+        </div>
+        <div class="header__image"></div>
+    </section>
+
+    <!-- Contenido -->
+    <main class="content">
+
+        <!-- Quien soy -->
+        <section id="whoami" class="whoami">
+            <div class="container">
+                <h3 class="whoami__title">
+                    ¿Quién soy?
+                    <span class="separator--large"></span>
+                    <span class="separator--small"></span>
+                </h3>
+                <div class="whoami__content">
+                    <div class="whoami__image whoami__image--front">
+                        <img src="./images/yo3.jpg" alt="Harvey">
+                    </div>
+                    <div class="whoami__image whoami__image--back">
+                        <img src="./images/yo.jpg" alt="Harvey">
+                    </div>
+                    <div class="whoami__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur elit. Pellentesque in massa mollis sapien viverra aliquet.
+                            In hac habitasse platea dictumst. Curabitur nec ex venenatis elementum sed nec tortor. Pellentesque
+                            blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra
+                            aliquet. In hac habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed
+                            nec tortor.
+                        </p>
+                        <p>Lorem ipsum, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra aliquet. In
+                            hac habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed nec tortor.
+                            Pellentesque blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque in massa mollis sapien viverra aliquet.
+                            In hac habit. Curabitur nec ex venenatis sem pretium elementum sed nec tortor. blandit ex enim,
+                            quis scelerisque ipsum hendrerit egestas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estudios -->
+        <section id="studies" class="studies">
+            <div class="container">
+                <h3 class="studies__title">
+                    Estudios
+                    <span class="separator--large"></span>
+                    <span class="separator--small"></span>
+                </h3>
+                <p class="studies__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra aliquet.
+                    In hac habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed nec tortor. Pellentesque
+                    blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                <div class="studies__content">
+                    <article class="studies__content--item">
+                        <div class="studies__content--circle">
+                            <span class="ico__graphic"></span>
+                        </div>
+                        <h5 class="studies__content--title">
+                            Graphic Design
+                            <span class="separator--large"></span>
+                            <span class="separator--small"></span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra nulla quis faucibus sodales.</p>
+                    </article>
+                    <article class="studies__content--item">
+                        <div class="studies__content--circle">
+                            <span class="ico__web"></span>
+                        </div>
+                        <h5 class="studies__content--title">
+                            Web Design
+                            <span class="separator--large"></span>
+                            <span class="separator--small"></span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra nulla quis faucibus sodales.</p>
+                    </article>
+                    <article class="studies__content--item">
+                        <div class="studies__content--circle">
+                            <span class="ico__ui"></span>
+                        </div>
+                        <h5 class="studies__content--title">
+                            UI Design
+                            <span class="separator--large"></span>
+                            <span class="separator--small"></span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra nulla quis faucibus sodales.</p>
+                    </article>
+                    <article class="studies__content--item">
+                        <div class="studies__content--circle">
+                            <span class="ico__development"></span>
+                        </div>
+                        <h5 class="studies__content--title">
+                            Web Development
+                            <span class="separator--large"></span>
+                            <span class="separator--small"></span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra nulla quis faucibus sodales.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia -->
+        <section id="experience" class="experience">
+            <article class="container">
+                <header>
+                    <h3 class="experience__title">
+                        Experiencia
+                        <span class="separator--large"></span>
+                        <span class="separator--small"></span>
+                    </h3>
+                </header>
+
+                <div class="experience__description">
+                    <p>Lorem ipsum dolor sit amet, consectetur elit. Pellentesque in massa mollis sapien viverra aliquet. In
+                        hac habitasse platea dictumst. Curabitur nec ex venenatis elementum sed nec tortor. Pellentesque
+                        blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra
+                        aliquet. In hac habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed nec
+                        tortor.
+                    </p>
+                    <p>Lorem ipsum, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra aliquet. In hac
+                        habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed nec tortor. Pellentesque
+                        blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                    <p>Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque in massa mollis sapien viverra aliquet. In
+                        hac habit. Curabitur nec ex venenatis sem pretium elementum sed nec tortor. blandit ex enim, quis
+                        scelerisque ipsum hendrerit egestas.
+                    </p>
+                </div>
+
+                <footer class="experience__image">
+                    <ul>
+                        <li>
+                            <img src="./images/logitravel_logo.png" alt="Logitravel">
+                        </li>
+                        <li>
+                            <img src="./images/alitravel_logo.png" alt="Alitravel">
+                        </li>
+                        <li>
+                            <img src="./images/smyrooms_logo.png" alt="Smyrooms">
+                        </li>
+                        <li>
+                            <img src="./images/7ideas_logo.png" alt="7ideas">
+                        </li>
+                        <li>
+                            <img src="./images/traveltool_e_logo.png" alt="traveltool">
+                        </li>
+                    </ul>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="about-me" class="about-me">
+            <div class="container">
+                <h3 class="about-me__title">
+                    Sobre mí
+                    <span class="separator--large"></span>
+                    <span class="separator--small"></span>
+                </h3>
+                <div class="about-me__content">
+                    <div clas="about-me__video">
+                        <video id="video" width="550" height="300" controls>
+                            <source src="./video/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="about-me__info">
+                        <p class="about-me__description">Lorem ipsum dolor sit amet, consectetur elit. Pellentesque in massa mollis sapien viverra aliquet.
+                            In hac habitasse platea dictumst. Curabitur nec ex venenatis elementum sed nec tortor. Pellentesque
+                            blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra
+                            aliquet. In hac habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed
+                            nec tortor.</p>
+                        <p>Lorem ipsum, consectetur adipiscing elit. Pellentesque in massa mollis sapien viverra aliquet. In
+                            hac habitasse platea dictumst. Curabitur nec ex venenatis sem pretium elementum sed nec tortor.
+                            Pellentesque blandit ex enim, quis scelerisque ipsum hendrerit egestas.</p>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3 class="contact__title">
+                    Contacta con nosotros
+                    <span class="separator--large"></span>
+                    <span class="separator--small"></span>
+                </h3>
+                <div class="contact__content">
+                    <div class="contact__content--form">
+                        <form name="contact" method="get" novalidate>
+
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+
+                            <input type="text" name="email" id="email" placeholder="name@company.com" required>
+
+                            <!-- <input type="text" name="phone" id="phone" placeholder="Teléfono" required> -->
+
+                            <input type="text" id="phone" name="phone" placeholder="Teléfono +34 666 999 333">
+
+                            <div class="contact__content--options">
+                                <div>
+                                    <label for="value_1">Amigos</label>
+                                    <input type="radio" id="value_1" name="valueKnow" value="Amigos" required="">
+                                </div>
+                                <div>
+                                    <label for="value_2">Redes Sociales</label>
+                                    <input type="radio" id="value_2" name="valueKnow" value="Redes Sociales" required="">
+                                </div>
+                                <div>
+                                    <label for="value_3">Internet</label>
+                                    <input type="radio" id="value_3" name="valueKnow" value="Internet" required="">
+                                </div>
+                                <div>
+                                    <label for="value_others">Others</label>
+                                    <input type="radio" id="value_others" name="valueKnow" value="Others" required>
+                                </div>
+                            </div>
+
+                            <input type="text" name="inputOther" id="inputOther" placeholder="Otros" required>
+
+                            <div class="contact__content--text">
+                                <textarea class="contact__content--textarea" name="counter" id="counter" cols="30" rows="10" placeholder="Campo de texto"></textarea>
+
+                                <div class="counter__words">
+                                    <span id="counter__visible">0</span>/150
+                                </div>
+                            </div>
+
+                            <button class="enviar" type="submit" id="enviar">Enviar mensaje</button>
+                            <button type="submit" id="recibir">Recibir</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Pie -->
+    <footer class="footer">
+        Francisco Llabrés &copy; 2018 Práctica HTML5, CSS3 y JavaScript
+    </footer>
+
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/notifications.js"></script>
+    <script src="./scripts/full-screen.js"></script>
+    <script src="./scripts/ajax.js"></script>
+    <script src="./scripts/toggle-menu.js"></script>
+
+</body>
+
+</html>

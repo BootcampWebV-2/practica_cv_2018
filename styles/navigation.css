@@ -1,0 +1,107 @@
+/* Menú de navegación */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+  height: 75px;
+}
+.navbar .navbar__list {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 75px;
+  line-height: 53px;
+}
+.navbar .navbar__list > .navbar__item {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: roboto;
+  padding: 0 20px;
+  transition: background-color 0.5s linear;
+  cursor: pointer;
+}
+.navbar .navbar__list > .navbar__item:hover {
+  background-color: grey;
+}
+.navbar .navbar__list > .navbar__item a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  color: white;
+}
+.navbar .navbar__list > .navbar__item--active {
+  background-color: grey;
+}
+.navbar .navbar__list > .navbar__item a:hover {
+  color: white;
+}
+
+.navbar-footer {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.header-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+
+  .menu-desplegable:before {
+    content: "\f039";
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 1.5rem;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  nav.menu-top,
+  nav.menu-icon {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+    font-weight: 800;
+    font-size: 2rem;
+    list-style: none;
+    display: none;
+    text-decoration: none;
+  }
+  nav.menu-icon {
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  .menu-icon:hover + .menu-top {
+    display: block;
+  }
+
+  .menu-top:hover {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    list-style: none;
+    border: 1px solid black;
+  }
+}
