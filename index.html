@@ -61,14 +61,10 @@
     <!-- Menú mobile -->
     <header class="header-mobile">
         <nav class="menu-icon">
-            <ul>
-                <li>
-                    <a id="menuBtn" class="menu-desplegable" href="#bottom-menu"></a>
-                </li>
-            </ul>
+            <a id="menuBtn" class="menu-desplegable" href="#" onclick="openMenu();"></a>
         </nav>
-        <nav class="menu-top">
-            <ul class="">
+        <nav id="menus" class="menu-top" onclick="closeMenu();">
+            <ul class=""  >
                 <li class="">
                     <a href="#header">Inicio</a>
                 </li>
@@ -278,7 +274,7 @@
         </section>
 
         <!-- Contacto -->
-        <section id="contact" class="contact">
+        <!-- <section id="contact" class="contact">
             <div class="container">
                 <h3 class="contact__title">
                     Contacta con nosotros
@@ -295,7 +291,7 @@
 
                             <input type="text" name="email" id="email" placeholder="name@company.com" required>
 
-                            <!-- <input type="text" name="phone" id="phone" placeholder="Teléfono" required> -->
+                            <input type="text" name="phone" id="phone" placeholder="Teléfono" required>
 
                             <input type="text" id="phone" name="phone" placeholder="Teléfono +34 666 999 333">
 
@@ -334,6 +330,54 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <!-- Contacto 2 -->
+        <section id="contacto" class="contact">
+            <h3 class="contact__title">
+                Contacta con nosotros
+                <span class="separator--large"></span>
+                <span class="separator--small"></span>
+            </h3>
+            <div class="contact__content">
+                <form action="" id="contact">
+
+                    <div class="form-group">
+                        <label for="nombre">Name</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label  for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Phone Number</label>
+                        <span class="mensajeErrorTel" id="mensajeErrorTel">Debes introducir un número correcto</span>
+                        <input type="tel" name="numero" id="numero" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="selection">Como nos has encontrado</label>
+                        <select name="selection" id="selection" onchange="showOthers();" required>
+                            <option value="google">Google</option>
+                            <option value="linkedin">Linkedin</option>
+                            <option value="others">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="inputOthers" id="others" style="display:none" type="text" name="others" placeholder="Otros">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Observaciones</label>
+                        <span class="mensajeError" id="mensajeError">El mensaje no puede contener más de 150 palabras</span>
+                        <textarea id="mensaje" name="mensaje" placeholder="Dejame un mensaje corto" wrap="hard" rows="10" cols="60" style="display: block"></textarea>
+                    </div>
+
+                    <button class="boton" type="submit" id="send">Send</button>
+                </form>
+            </div>
         </section>
 
 
@@ -346,10 +390,12 @@
 
     <script src="./scripts/navigation.js"></script>
     <script src="./scripts/form.js"></script>
+    <!-- <script src="./scripts/form-contact.js"></script>
+    <script src="./scripts/form-contact2.js"></script> -->
     <script src="./scripts/notifications.js"></script>
     <script src="./scripts/full-screen.js"></script>
-    <script src="./scripts/ajax.js"></script>
-    <script src="./scripts/toggle-menu.js"></script>
+    <script src="./scripts/ajax.js"></script> -->
+    <!-- <script src="./scripts/toggle-menu.js"></script> -->
 
 </body>
 

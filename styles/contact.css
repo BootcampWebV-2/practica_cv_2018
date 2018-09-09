@@ -40,10 +40,21 @@
   font-size: 0.9rem;
 }
 
+.oculto {
+  display: none;
+}
+
 #inputOther {
   display: none;
   width: 100%;
   flex-basis: 100%;
+}
+
+.mensajeError,
+.mensajeErrorTel {
+  display: none;
+  color: red;
+  margin: 10px 0;
 }
 .contact__content--text {
   width: 100%;
@@ -73,6 +84,11 @@ button:disabled {
 .enviar {
   margin-bottom: 20px;
 }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
 
 @media screen and (max-width: 900px) {
   .contact {

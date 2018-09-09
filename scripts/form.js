@@ -1,55 +1,51 @@
-$(document).ready(function() {
-  // Otros
-  $('input[type="radio"]').click(function() {
-    if ($(this).attr("id") === "value_others") {
-      $("#inputOther").show();
-    } else {
-      $("#inputOther").hide();
-    }
-  });
+var form = document.getElementById("contact");
 
-  // Contar
-  $("#counter").on("keyup", function() {
-    var words = this.value.match(/\S+/g).length;
-
-    if (words > 150) {
-      var trimmed = $(this)
-        .val()
-        .split(/\s+/, 150)
-        .join(" ");
-      $(this).val(trimmed + " ");
-    } else {
-      $("#counter__visible").text(words);
-      $("#word_left").text(150 - words);
-    }
-  });
-});
-
-var form = document.getElementsByName("contact")[0];
-
+//- Formulario
 var nombreInput = document.getElementById("nombre");
-var apellidosInput = document.getElementById("apellidos");
+
 var emailInput = document.getElementById("email");
-var numeroInput = document.getElementById("phone");
-var valueInput = {
-  value1: document.getElementById("value_1"),
-  value2: document.getElementById("value_2"),
-  value3: document.getElementById("value_3"),
-  value4: document.getElementById("value_others")
-};
+
+var numeroInput = document.getElementById("numero");
+var mensajeErrorTel = document.getElementById("mensajeErrorTel");
+
+var selectInput = document.getElementById("selection");
+var others = document.getElementById("others");
+
+
+var mensajeInput = document.getElementById("mensaje");
+var mensajeError = document.getElementById("mensajeError");
+
 var submitButton = document.getElementById("enviar");
 
+//- Menu Mobile
+var menu = document.getElementById("menus");
+
+
+//- Formulario
+function showOthers() {
+  if (selectInput.value === "others") {
+    others.style.display = "block";
+    others.focus();
+  }
+  else {
+    others.style.display = "none";
+  }
+}
+
+//- Menu Mobile
+function openMenu() {
+  menu.style.display = "block";
+}
+
+function closeMenu() {
+    menu.style.display = "none";
+}
+
 form.addEventListener("submit", function(event) {
+
   if (nombreInput.checkValidity() === false) {
     alert("Tienes que escribir tu nombre");
     nombreInput.focus();
-    event.preventDefault();
-    return false;
-  }
-
-  if (apellidosInput.checkValidity() === false) {
-    alert("Tienes que escribir tus apellidos");
-    apellidosInput.focus();
     event.preventDefault();
     return false;
   }
@@ -64,43 +60,54 @@ form.addEventListener("submit", function(event) {
     return false;
   }
 
-  var regexNumber = /^\+[0-9\{2}]+ [0-9\{9}]/;
-  var resultNumberValidation = regexNumber.test(numeroInput.value);
+  var regex1=/^([0-9]+){9}$/;
+  var numeroValidation1 = regex1.test(numeroInput.value);
 
-  if (resultNumberValidation === false) {
-    alert("Tienes que escribir un número de teléfono correcto");
+  if (numeroValidation1 === false){
+    //alert("Tienes que escribir un numero correcto");
+    mensajeErrorTel.style.display = "block";
     numeroInput.focus();
     event.preventDefault();
     return false;
   }
 
-  if (valueInput.value1.checkValidity() === false) {
-    alert("Tienes que seleccionar como nos has conocido");
+  var mensajePalabrasUno = mensajeInput.value.split("\n").join(" ");
+  var mensajePalabras = mensajePalabrasUno.split(" ");
+  var mensajePalabrasClean = mensajePalabras.filter(Boolean);
+  var numeroPalabras = mensajePalabrasClean.length;
+
+
+  if (numeroPalabras > 150) {
+    //alert("El numero de palabras no puede ser superior a 4");
+    mensajeError.style.display = "block";
+    mensajeInput.focus();
     event.preventDefault();
     return false;
   }
 
-  //submitButton.setAttribute("disabled", "");
+
+  submitButton.setAttribute("disabled", "");
   event.preventDefault();
-  createData();
 
-  // setTimeout(function() {
-  //   createData();
-  //   form.reset();
-  //   //sendNotification("Formulario recibido", "Gracias por participar");
 
-  //   submitButton.removeAttribute("disabled");
-  // }, 1000);
+  setTimeout(function() {
+    form.reset();
+    sendNotification("Formulario recibido", "Gracias por contactar");
+    submitButton.removeAttribute("disabled");
+  }, 1000);
+
 });
 
-var recibir = document.getElementById("recibir");
-recibir.addEventListener("click", function() {
-  getData();
-});
 
-function Datosformulario(nombre, apellidos, email, telefono) {
-  this.nombre = nombre;
-  this.apellidos = apellidos;
-  this.email = email;
-  this.telefono = telefono;
-}
+
+
+
+
+
+
+
+
+
+
+
+
